@@ -971,5 +971,25 @@
         $this->log("No event handler for event '$e'");
       return $ret;
     }
+
+      /**
+       * Get PresenceState
+       * @param $provider
+       * @param $type
+       * @return array
+       */
+      function PresenceStateGet($provider) {
+          return $this->send_request('PresenceState',array('Provider'=>$provider));
+      }
+
+      /**
+       * Set PresenceState
+       * @param $provider
+       * @param $type
+       * @return array
+       */
+      function PresenceStateSet($provider, $type) {
+          return $this->command('presencestate change CustomPresence:' . $provider. ' "' . $type . '"');
+      }
   }
 ?>
