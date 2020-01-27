@@ -19,6 +19,8 @@ If you have developed software based around phpagi, we'd like to hear from
 you!  Drop us a note, and indicate whether you'd like us to list your 
 application on our website.
 
+Original version forked from https://github.com/welltime/phpagi
+
 ## Installation
 
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
@@ -26,13 +28,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```bash
-$ composer require welltime/phpagi ^2.20
+$ composer require daliborstojakovic/phpagi ^2.20
 ```
 
 or add
 
 ```
-"welltime/phpagi": "^2.20"
+"daliborstojakovic/phpagi": "^2.20"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -55,11 +57,4 @@ DOCS
 
 * phpagi.conf             - An example configuration file for phpagi.
 * fastagi.xinetd          - xinetd.conf sample configuration for fastagi
-
-SUPPORT
--------
-
-Support for phpagi is available from the project website. 
-
- * https://github.com/welltime/phpagi
 
